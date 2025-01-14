@@ -8,7 +8,7 @@ add_executable(vfsppexample example.cpp)
 
 add_compile_definitions(VFSPP_ENABLE_MULTITHREADING)
 
-target_link_libraries(vfsppexample PRIVATE vfspp)
+target_link_libraries(vfsppexample PRIVATE vfspp::vfspp)
 target_compile_features(vfsppexample PRIVATE cxx_std_17)
 
 # Specify the output directory
